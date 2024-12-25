@@ -1,0 +1,115 @@
+.sectionAbout {
+  padding: 50px 0;
+}
+
+.textbox {
+  margin-bottom: 20px;
+}
+
+.texthead {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(90deg, #16badb, #8e44ad, #f39c12);
+  background-size: 30%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title {
+  text-shadow: 0 0 2px ghostwhite;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.textboxtext {
+  text-shadow: 0 0 1px ghostwhite;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.historybox {
+  background: linear-gradient(
+    135deg,
+    #252545,
+    #3f3c6e,
+    rgba(160, 160, 160, 0.2)
+  );
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Skills */
+.skillsTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  margin: 40px 0;
+}
+.skills {
+  display: flex;
+  flex: 1;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.skillsTitle {
+  text-shadow: 0 0 2px ghostwhite;
+  color: whitesmoke;
+  font-size: 28px;
+  /* width: 111px; */
+}
+/*Hard Skills & Soft Skills*/
+.list {
+  display: flex;
+  width: 100%;
+  column-gap: 40px;
+  align-items: center;
+}
+
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(90deg, #16badb, #8e44ad, #f39c12);
+  background-size: 250%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  background-position: 0% 50%;
+  transition: background-position 0.5s ease-in-out;
+}
+.listItem:hover {
+  background-position: 100% 50%;
+}

@@ -1,0 +1,226 @@
+.section{
+  padding:150px 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 92px;
+}
+.left {
+  width: 40%;
+  height: 391px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 391px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.imgbox {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #3f3c6e 0%,
+    rgba(50, 15, 133, 0) 100%
+  );
+  width: 200px;
+  height: 200px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  animation: scale-animation 1s infinite ease-in-out;
+}
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 10px 0px 20px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.listitem {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(90deg, #16badb, #8e44ad, #f39c12);
+  background-size: 250%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  background-position: 0% 50%;
+  transition: background-position 0.5s ease-in-out;
+}
+.listitem:hover {
+  background-position: 100% 50%;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #16badb, #8e44ad, #f39c12);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.link:hover::before {
+  opacity: 1;
+}
+
+.link:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  background: linear-gradient(90deg, #16badb, #8e44ad, #f39c12);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-anime 5s infinite;
+}
+
+.text {
+  font-size: 42px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(90deg, #16badb, #8e44ad, #f39c12);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-anime 5s infinite;
+}
+
+@keyframes text-anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes scale-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .section{
+    padding: 20px 0;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 50px;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    justify-content: space-evenly;
+    height: auto;
+    width: 100%;
+  }
+  .listitem{
+    font-size: 16px;
+  }
+  .text{
+    font-size: 60px;
+  }
+  .link{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+/* Tel (max-width: 575px) */
+@media (max-width: 575px) {
+  .section{
+    padding: 20px 0;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 50px;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+  .listitem{
+    font-size: 13px;
+  }
+  .text{
+    font-size: 32px;
+  }
+  .offers{
+    align-items: center;
+  }
+  .link{
+    font-size: 14px;
+  }
+}
