@@ -7,6 +7,7 @@ import image from "../../assets/images/cane-river-responsive.webp";
 //Icons
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Image from "next/image";
+import { useSwipeable } from "react-swipeable";
 
 const slides = [
   {
@@ -49,9 +50,15 @@ export default function Slider() {
       prevIndex === 0 ? slides.length - 1 : prevIndex - 1
     );
   };
+  // Swipe handlers
+  const handlers = useSwipeable({
+    onSwipedLeft: nextSlide,
+    onSwipedRight: prevSlide,
+    trackMouse: true, // Enables swipe functionality with mouse (for desktop)
+  });
 
   return (
-    <div className={styles.sliderContainer}>
+    <div {...handlers} className={styles.sliderContainer}>
       <button
         className={`${styles.navigationButton} ${styles.prev}`}
         onClick={prevSlide}

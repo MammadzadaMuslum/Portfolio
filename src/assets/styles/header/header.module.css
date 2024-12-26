@@ -1,5 +1,7 @@
 .header {
-padding-top: 50px;
+  padding-top: 50px;
+}
+.headerdiv{
   display: flex;
   align-items: center;
 }
@@ -53,18 +55,18 @@ padding-top: 50px;
   100% {
     background-position: 0% 50%;
   }
-  
 }
 
 /* Tablet (max-width: 1024px) */
 @media (max-width: 1024px) {
   .header {
     padding: 30px 0;
-    flex-direction: column; 
-    align-items: flex-start;
-    
   }
-  .left{
+  .headerdiv{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .left {
     width: 100%;
   }
 
@@ -74,15 +76,15 @@ padding-top: 50px;
 
   .list {
     row-gap: 10px;
-    margin-top: 20px; 
+    margin-top: 20px;
   }
 
   .link {
-    font-size: 24px; 
+    font-size: 24px;
   }
 
   .hr {
-    width: 100%; 
+    width: 100%;
   }
 }
 
@@ -90,9 +92,11 @@ padding-top: 50px;
 @media (max-width: 575px) {
   .header {
     padding: 20px 0;
-    flex-direction: column; 
   }
-  .left{
+  .headerdiv{
+    flex-direction: column;
+  }
+  .left {
     width: 100%;
   }
   .navbar {
@@ -101,14 +105,14 @@ padding-top: 50px;
 
   .list {
     row-gap: 10px;
-    margin-top: 20px; 
+    margin-top: 20px;
   }
 
   .link {
-    font-size: 18px; 
+    font-size: 18px;
   }
 
   .hr {
-    width: 100%; 
+    width: 100%;
   }
 }

@@ -4,8 +4,8 @@ import styles from "../../assets/styles/header/header.module.css";
 export default function Header() {
   return (
     <>
-      <header>
-        <div className={styles.header}>
+      <header className={styles.header}>
+        <div  className={styles.headerdiv}>
           <div className={styles.left}>
             <span className={styles.hr}></span>
           </div>

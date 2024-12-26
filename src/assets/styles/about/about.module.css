@@ -44,7 +44,6 @@
   border-radius: 15px;
   padding: 20px;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes gradientShift {
@@ -74,13 +73,11 @@
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .skillsTitle {
   text-shadow: 0 0 2px ghostwhite;
   color: whitesmoke;
   font-size: 28px;
-  /* width: 111px; */
 }
 /*Hard Skills & Soft Skills*/
 .list {
@@ -112,4 +109,61 @@
 }
 .listItem:hover {
   background-position: 100% 50%;
+}
+
+/*Responsive*/
+@media(max-width:1024px){
+.sectionAbout{
+  padding: 50px 20px;
+}
+.historybox{
+  background-size: 300% 300%;
+}
+.title{
+font-size: 24px;
+}
+.textboxtext{
+font-size: 15px;
+}
+.skills{
+  padding: 20px;
+  height: 150px;
+}
+.skillsTitle{
+  font-size: 22px;
+}
+.listItem{
+  font-size: 8px;
+}
+.list{
+  align-items: flex-start;
+}
+
+}
+@media(max-width:575px){
+  .sectionAbout{
+    padding: 50px 20px;
+  }
+  .historybox{
+    background-size: 300% 300%;
+  }
+  .texthead{
+    background-size: 56%;
+  }
+  .skillsTable {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .skills {
+    padding: 15px;
+  }
+  .skillsTitle {
+    font-size: 22px;
+  }
+  .listItem {
+    font-size: 14px;
+  }
+  .list{
+    align-items: flex-start;
+  }
 }

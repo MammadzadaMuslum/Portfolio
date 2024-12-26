@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "../assets/styles/about/about.module.css";
+import Head from "next/head";
 
 //Components
 import HardSkills from "../components/About/Skills/HardSkills/HardSkills";
 import SoftSkills from "../components/About/Skills/SoftSkills/SoftSkills";
-import Head from "next/head";
 
 export default function about() {
   return (

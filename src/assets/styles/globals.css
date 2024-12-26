@@ -8,23 +8,11 @@
 }
 
 body {
-  background: linear-gradient(135deg, #252545, #3f3c6e, rgb(160, 160, 160));
+  background: linear-gradient(135deg, black 20%, #3f3c6e 25%, #3f3c6e 40%, black 50%, black 70%, #3f3c6e 75%, #3f3c6e 100%);
+  background-size: 100% 100%;
   min-height: 100vh;
-  background-size: 300% 300%;
-  animation: gradientAnimation 10s ease infinite;
   width: 100%;
-}
-
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  
 }
 
 .container {
@@ -41,43 +29,5 @@ body {
   body {
     min-height: 100vh;
   }
-}
-
-
-.movieSwiper {
-  width: 100%;
-  height: 100%;
-}
-
-.movie-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.movie-image {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.movie-content {
-  padding: 10px;
-}
-
-.movie-title {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.movie-description {
-  font-size: 14px;
-  color: #555;
 }
 
