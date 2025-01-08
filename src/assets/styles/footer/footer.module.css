@@ -16,7 +16,7 @@
   font-weight: 500;
   font-size: 12px;
   color: white;
-  background: linear-gradient(90deg, #16badb, #8e44ad, #f39c12);
+  background: linear-gradient(90deg, #16badb, #8e44ad);
   background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -40,7 +40,7 @@
   width: 500px;
   height: 2px;
   border-radius: 2px;
-  background: linear-gradient(90deg, #16badb, #8e44ad, #f39c12);
+  background: linear-gradient(90deg, #16badb, #8e44ad);
   background-size: 300%;
   animation: hr-gradient 3s infinite;
   margin: 20px 0;

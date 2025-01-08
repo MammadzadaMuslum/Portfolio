@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../../../../assets/styles/about/about.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function SoftSkills() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
-      <div className={styles.skills}>
+      <div className={styles.skills} data-aos="fade-left">
         <h2 className={styles.skillsTitle}>Soft Skills</h2>
         <div className={styles.list}>
           <ul className={styles.skillsList}>

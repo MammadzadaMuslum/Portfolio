@@ -1,7 +1,7 @@
 .header {
   padding-top: 50px;
 }
-.headerdiv{
+.headerdiv {
   display: flex;
   align-items: center;
 }
@@ -19,15 +19,33 @@
 }
 
 .link {
+  position: relative;
   font-size: 32px;
   font-weight: 500;
   color: white;
-  background: linear-gradient(90deg, #16badb, #8e44ad, #f39c12);
-  background-size: 150%;
+  background: linear-gradient(90deg, #16badb, #8e44ad);
+  background-size: 280%;
   background-position: 0% 50%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: background-position 0.5s ease-in-out;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #16badb, #8e44ad);
+  background-size: 300%;
+  animation: hr-gradient 3s infinite;
+  transition: all 0.3s ease-in-out;
+}
+
+.link.active::after {
+  width: 100%;
 }
 
 .link:hover {
@@ -39,7 +57,7 @@
   width: 100%;
   height: 2px;
   border-radius: 2px;
-  background: linear-gradient(90deg, #16badb, #8e44ad, #f39c12);
+  background: linear-gradient(90deg, #16badb, #8e44ad);
   background-size: 300%;
   animation: hr-gradient 3s infinite;
   margin: 20px 0;
@@ -62,7 +80,7 @@
   .header {
     padding: 30px 0;
   }
-  .headerdiv{
+  .headerdiv {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -93,7 +111,7 @@
   .header {
     padding: 20px 0;
   }
-  .headerdiv{
+  .headerdiv {
     flex-direction: column;
   }
   .left {

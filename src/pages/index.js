@@ -1,19 +1,26 @@
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect } from "react";
+import AOS from "aos"; 
+import "aos/dist/aos.css";
 
 //styles
 import styles from "../assets/styles/home/home.module.css";
 
 //icons
 import { FaBriefcase, FaLaptopCode, FaBolt } from "react-icons/fa";
-import { SiReact, SiTypescript, SiSass } from "react-icons/si";
+import { SiReact } from "react-icons/si";
 
 //images
 import avatar from "../assets/images/Me.png";
 import Link from "next/link";
 
 export default function index() {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: 'ease-in-out', offset: 120 });
+  }, []);
+
   //left div mouse animation
   useEffect(() => {
     const leftDiv = document.querySelector(`.${styles.left}`);
@@ -46,7 +53,7 @@ export default function index() {
       <section className={styles.section}>
         <div className="container">
           <div className={styles.hero}>
-            <div className={styles.left}>
+            <div className={styles.left} data-aos="fade-right">
               <p className={styles.title}>
                 l'm <b>Mammadzada Muslum</b>
               </p>
@@ -55,7 +62,7 @@ export default function index() {
                 websites.
               </h1>
             </div>
-            <div className={styles.right}>
+            <div className={styles.right} data-aos="fade-left">
               <div className={styles.imgbox}>
                 <Image className={styles.img} src={avatar} alt="avatar" />
               </div>

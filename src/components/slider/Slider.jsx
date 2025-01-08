@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "../../assets/styles/slider/slider.module.css";
+import { useSwipeable } from "react-swipeable";
 
 //Images
 import image from "../../assets/images/cane-river-responsive.webp";
@@ -7,7 +8,6 @@ import image from "../../assets/images/cane-river-responsive.webp";
 //Icons
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Image from "next/image";
-import { useSwipeable } from "react-swipeable";
 
 const slides = [
   {

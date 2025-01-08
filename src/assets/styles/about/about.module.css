@@ -10,8 +10,8 @@
   font-size: 40px;
   font-weight: 700;
   color: white;
-  background: linear-gradient(90deg, #16badb, #8e44ad, #f39c12);
-  background-size: 30%;
+  background: linear-gradient(90deg, #16badb, #8e44ad);
+  background-size: 20%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -99,7 +99,7 @@
   font-size: 15px;
   font-weight: 500;
   color: white;
-  background: linear-gradient(90deg, #16badb, #8e44ad, #f39c12);
+  background: linear-gradient(90deg, #16badb, #8e44ad);
   background-size: 250%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

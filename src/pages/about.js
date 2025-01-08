@@ -9,9 +9,9 @@ import SoftSkills from "../components/About/Skills/SoftSkills/SoftSkills";
 export default function about() {
   return (
     <>
-    <Head>
-      <title>About Page</title>
-    </Head>
+      <Head>
+        <title>About Page</title>
+      </Head>
       <section className={styles.sectionAbout}>
         <div className="container">
           <div className="about-page">

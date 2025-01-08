@@ -5,14 +5,15 @@
   text-decoration: none;
   list-style: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background: linear-gradient(135deg, black 20%, #3f3c6e 25%, #3f3c6e 40%, black 50%, black 70%, #3f3c6e 75%, #3f3c6e 100%);
-  background-size: 100% 100%;
   min-height: 100vh;
+  background: linear-gradient(120deg, #1a1a2e, #16213e);
   width: 100%;
-  
 }
 
 .container {
@@ -20,14 +21,4 @@ body {
   margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
-  body {
-    min-height: 100vh;
-  }
-}
-@media (max-width: 575px) {
-  body {
-    min-height: 100vh;
-  }
-}
 
