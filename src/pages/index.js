@@ -18,7 +18,7 @@ import Link from "next/link";
 export default function index() {
 
   useEffect(() => {
-    AOS.init({ duration: 1000, easing: 'ease-in-out', offset: 120 });
+    AOS.init({ duration: 1000, easing: 'ease-in-out', offset: 120,disable: "mobile" });
   }, []);
 
   //left div mouse animation
