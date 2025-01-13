@@ -91,7 +91,7 @@ export default function index() {
                     Performance Optimization & Clean Code
                   </li>
                 </ul>
-                <Link className={styles.link} href="">
+                <Link className={styles.link} href="/projects">
                   See My Projects
                 </Link>
               </div>

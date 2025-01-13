@@ -1,38 +1,76 @@
 import React, { useState } from "react";
 import styles from "../../assets/styles/slider/slider.module.css";
 import { useSwipeable } from "react-swipeable";
+import Image from "next/image";
 
 //Images
-import image from "../../assets/images/cane-river-responsive.webp";
+import img1 from "../../assets/images/Screenshot 2025-01-10 160204.png";
+import img2 from "../../assets/images/Screenshot 2025-01-10 164435.png";
+import img3 from "../../assets/images/Screenshot 2025-01-10 165027.png";
+import img4 from "../../assets/images/Screenshot 2025-01-10 165407.png";
+import img5 from "../../assets/images/Screenshot 2025-01-10 165622.png";
+import img6 from "../../assets/images/Screenshot 2025-01-10 170205.png";
+import img7 from "../../assets/images/Screenshot 2025-01-10 170733.png";
+import img8 from "../../assets/images/Screenshot 2025-01-13 105236.png";
+import img9 from "../../assets/images/Screenshot 2025-01-13 113914.png";
 
 //Icons
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import Image from "next/image";
 
 const slides = [
   {
-    title: "Guardians Of The Galaxy",
+    title: "Alison Travel",
     description:
-      "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
-    image: image,
+      "I created a travel platform with a user-friendly interface, enabling hotel and tour bookings by region using modern frontend technologies.",
+    image: img1,
   },
   {
-    title: "Eternals",
+    title: "KeepFace",
     description:
-      "7,000 BC, ten superpowered Eternals must protect humanity from the Deviants.",
-    image: image,
+      "Contributed to the Keepface project by implementing photo cropping functionality for influencers, fixing bugs, and providing ongoing support to ensure seamless user experience.",
+    image: img9,
   },
   {
-    title: "Justice League",
+    title: "Investment",
     description:
-      "Bruce Wayne assembles a team of superheroes to save Earth from an apocalyptic threat.",
-    image: image,
+      "Developed an investment blog page using Bootstrap, featuring a responsive design and informative content layout.",
+    image: img2,
   },
   {
-    title: "Avengers: Endgame",
+    title: "Doct Online",
     description:
-      "The remaining Avengers assemble one final stand against Thanos to save the universe.",
-    image: image,
+      "Created a platform where users can book appointments with doctors online and communicate with them seamlessly",
+    image: img3,
+  },
+  {
+    title: "Chaplean",
+    description:
+      "Developed a fully responsive blog page with a clean design that prioritizes readability and user engagement. The layout adapts seamlessly across devices, providing a smooth browsing experience.",
+    image: img4,
+  },
+  {
+    title: "Marvel Project",
+    description:
+      "I built a functional page using React hooks and the Marvel API, allowing users to interact with Marvel's data in a dynamic and responsive way.",
+    image: img5,
+  },
+  {
+    title: "SemVideo",
+    description:
+      "I created an admin dashboard where users can upload videos and manage various other features, providing an intuitive interface for content management.",
+    image: img6,
+  },
+  {
+    title: "Halal Finance",
+    description:
+      "Using Sima login, users can access the page, which is divided into two roles: one for borrowing money and the other for lending, with an admin panel to confirm transactions.",
+    image: img7,
+  },
+  {
+    title: "Portfolio",
+    description:
+      "I created my portfolio site using Next.js, with the styling implemented through CSS Modules for a modular and scalable design.",
+    image: img8,
   },
 ];
 

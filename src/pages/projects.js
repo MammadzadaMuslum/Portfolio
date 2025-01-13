@@ -13,7 +13,7 @@ export default function projects() {
     </Head>
       <section className={styles.section}>
         <div className="container">
-          <div className={styles.complated}>
+          <div className="complated">
             <h2 className={styles.title}>Complated Projects</h2>
             <Slider />
           </div>
