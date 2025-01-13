@@ -295,7 +295,7 @@
     background: none; 
     box-shadow: none; 
     font-size: 10px;
-    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: none;
   }
 
   .link::before {
