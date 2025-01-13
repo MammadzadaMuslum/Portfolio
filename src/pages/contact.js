@@ -104,7 +104,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact</title>
+        <title>Contact Page</title>
       </Head>
       <section className={styles.contactSection}>
         <div className="container">
@@ -133,7 +133,12 @@ export default function Contact() {
                     </li>
                     <li className={styles.contactItem}>
                       <h4 className={styles.text}>WhatsApp:</h4>
-                      <Link className={styles.link} href="" target="_blank">
+                      <Link
+                        className={styles.link}
+                        href="https://wa.me/994559343006
+"
+                        target="_blank"
+                      >
                         Contact us on WhatsApp
                       </Link>
                     </li>

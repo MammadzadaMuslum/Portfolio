@@ -60,6 +60,8 @@
   color: whitesmoke;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
   z-index: 2;
+  height: 90px; 
+  text-overflow: ellipsis;
   
 }
 
@@ -149,11 +151,21 @@
   right: 10px;
 }
 
+@media (max-width:768px){
+  .slideContent{
+    height: 160px;
+  }
+}
+
+
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 575px) {
+  .slideContent{
+    height: 100px;
+  }
   .slide {
     width: 80%;
-    height: 60%;
+    height: 70%;
   }
 
   .center {
@@ -169,4 +181,5 @@
   .navigationButton {
     display: none;
   }
+  
 }
